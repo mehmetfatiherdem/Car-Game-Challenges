@@ -1,15 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CarController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float _speed = 50.0f;
-    [SerializeField] private float _turnSpeed = 60.0f;
+    [SerializeField] private float _speed = 35.0f;
+    [SerializeField] private float _turnSpeed = 200.0f;
     private float _horizontalInput;
     private float _verticalInput;
 
-    // Update is called once per frame
     void Update()
     {
         _horizontalInput = Input.GetAxis("Horizontal");
